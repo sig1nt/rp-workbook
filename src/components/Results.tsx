@@ -40,7 +40,7 @@ const Results: React.FC<ResultsProps> = ({ results, numJudges }) => {
                     key={`cumulative-${idx}`}
                     className={isHighlighted ? 'highlight' : undefined}
                   >
-                    {cumulativeCount}
+                    {cumulativeCount}{isHighlighted ? ' (' + result.sumOfScoresAtMajority.toString() + ')' : ''}
                   </td>
                 );
               })}

@@ -1,4 +1,3 @@
-// src/components/RankingsInput.tsx
 import React, { useState } from 'react';
 
 export interface CompetitorResult {
@@ -10,7 +9,7 @@ export interface CompetitorResult {
   cumulativeCountAtMajority: number;
   sumOfScoresAtMajority: number;
   place: number;
-  highlightPlace: number | null; // Added this line
+  highlightPlace: number | null;
 }
 
 interface RankingsInputProps {
